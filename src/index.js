@@ -20,7 +20,6 @@ const muteVideo = () => {
     
 }
 
-//Actions or events of DOM for videos
 
 
 //selecVideo.play();
