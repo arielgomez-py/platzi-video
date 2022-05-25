@@ -20,15 +20,12 @@ const muteVideo = () => {
     
 }
 
-<<<<<<< HEAD
 
-=======
 //Actions or events of DOM for videos
 //Actions or events of DOM for videos
 playButton.addEventListener("click", playVideo);
 pauseButton.addEventListener("click", pauseVideo);
 mutedButton.addEventListener("click", muteVideo);
->>>>>>> functions
 
 //selecVideo.play();
 //selecVideo.pause();
