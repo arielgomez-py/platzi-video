@@ -15,6 +15,7 @@ const playVideo = () => {
 
 const pauseVideo = () => {
     selecVideo.pause();
+    
 }
 
 const muteVideo = () => {
@@ -23,7 +24,9 @@ const muteVideo = () => {
     }
     else{
         selecVideo.muted = false;  
-    }
+    } 
+}
+const volumeVideo = () => {
     
 }
 
