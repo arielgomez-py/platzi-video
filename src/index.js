@@ -6,6 +6,7 @@ const selecVideo = document.querySelector('video');
 const playButton = document.getElementById("play-btn");
 const pauseButton = document.getElementById("pause-btn");
 const mutedButton = document.getElementById("mute-btn");
+const volumeButton = document.getElementById("volume-btn");
 
 //Properties: play(), pause(), mute()
 // Functions
@@ -26,8 +27,12 @@ const muteVideo = () => {
         selecVideo.muted = false;  
     } 
 }
+
 const volumeVideo = () => {
-    
+    selecVideo.volume = 0.2;
+    if (selecVideo.volume < 1 && selecVideo.volume > 0) {
+        selecVideo.volume = selecVideo.volume - 0.2;
+    }
 }
 
 
@@ -35,6 +40,7 @@ const volumeVideo = () => {
 playButton.addEventListener("click", playVideo);
 pauseButton.addEventListener("click", pauseVideo);
 mutedButton.addEventListener("click", muteVideo);
+volumeButton.addEventListener("click", volumeVideo);
 
 //selecVideo.play();
 //selecVideo.pause();
