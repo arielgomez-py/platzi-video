@@ -6,6 +6,7 @@ const selecVideo = document.querySelector('video');
 const playButton = document.getElementById("play-btn");
 const pauseButton = document.getElementById("pause-btn");
 const mutedButton = document.getElementById("mute-btn");
+const volumeButton = document.getElementById("vol-btn");
 
 //Properties: play(), pause(), mute()
 // Functions
@@ -23,14 +24,18 @@ const muteVideo = () => {
     }
     else{
         selecVideo.muted = false;  
-    }
-    
+    }    
+}
+
+const volumeVideo = () => {
+
 }
 
 //Actions or events of DOM for videos
 playButton.addEventListener("click", playVideo);
 pauseButton.addEventListener("click", pauseVideo);
 mutedButton.addEventListener("click", muteVideo);
+volumeButton.addEventListener("click", volumeVideo);
 
 //selecVideo.play();
 //selecVideo.pause();
