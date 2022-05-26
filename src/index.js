@@ -30,9 +30,7 @@ const muteVideo = () => {
 
 const volumeVideo = () => {
     selecVideo.volume = 0.2;
-    if (selecVideo.volume < 1 && selecVideo.volume > 0) {
-        selecVideo.volume = selecVideo.volume - 0.2;
-    }
+    alert(selecVideo.volume);
 }
 
 
