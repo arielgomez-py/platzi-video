@@ -28,7 +28,7 @@ const muteVideo = () => {
 }
 
 const volumeVideo = () => {
-
+    alert(selecVideo.volume);
 }
 
 //Actions or events of DOM for videos
