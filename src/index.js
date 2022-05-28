@@ -37,13 +37,18 @@ const volumePlusVideo = () => {
     }
 }
  //Volume less
- 
+ const volumeLessVideo = () => {
+    if (selecVideo.volume > 0.1) {
+        selecVideo.volume = selecVideo.volume - 0.1;
+    }
+ }
 
 //Actions or events of DOM for videos
 playButton.addEventListener("click", playVideo);
 pauseButton.addEventListener("click", pauseVideo);
 mutedButton.addEventListener("click", muteVideo);
 volumePlusButton.addEventListener("click", volumePlusVideo);
+volumeLessButton.addEventListener("click", volumeLessVideo);
  
 
 //selecVideo.play();
