@@ -20,6 +20,8 @@
       type="text/css"
       href="%PUBLIC_URL%/_dist_/index.css"
     />
+    <!--Using fontawesome-->
+    <script src="https://kit.fontawesome.com/a4b7b0ce66.js" crossorigin="anonymous"></script>
     <title>Video player</title>
   </head>
   <body>
@@ -46,12 +48,36 @@
       </div>
     </div>
     <div id="container">
-      <video id="video" src="./WOA 2019 - Official Trailer.mp4" width="620" height="760"></video>
-      <button type="button" id ="play-btn">Play</button>
-      <button type="button" id ="pause-btn">Pause</button>
-      <button type="button" id ="mute-btn">Mute</button>
-      <button type="button" id ="vol-btn-plus">Volume plus</button>
-      <button type="button" id ="vol-btn-less">Volume less</button>
+      <!--<i class="fa-solid fa-play"></i>
+      <i class="fa-solid fa-pause"></i>
+      <i class="fa-solid fa-volume-high"></i>
+      <i class="fa-solid fa-volume-low"></i>
+      <i class="fa-solid fa-volume-xmark"></i>-->
+      <div class="container video" >
+        <video id="video" src="./WOA 2019 - Official Trailer.mp4" width="620" height="760"></video>
+      </div>
+      <div class="buttons">
+        <button type="button" id ="play-btn" class="text-stone-300">
+          <i class="fa-solid fa-play"></i>
+        </button>
+
+        <button type="button" id ="pause-btn">
+          <i class="fa-solid fa-pause"></i>
+        </button>
+
+        <button type="button" id ="mute-btn">
+          <i class="fa-solid fa-volume-xmark"></i>
+        </button>
+
+        <button type="button" id ="vol-btn-plus">
+          <i class="fa-solid fa-volume-high"></i>
+        </button>
+        
+        <button type="button" id ="vol-btn-less">
+          <i class="fa-solid fa-volume-low"></i>
+        </button>
+      </div>
+      
     </div>
 
     <!-- Add more scripts here -->
